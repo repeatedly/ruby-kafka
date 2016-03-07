@@ -5,3 +5,8 @@ machine:
 dependencies:
   pre:
     - gem install bundler
+
+test:
+  override:
+    - bundle exec rspec
+    - bundle exec rspec --tag functional
